@@ -1,0 +1,123 @@
+<html class="mdl-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Do Application</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Do Application">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) 
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">-->
+
+    <link rel="shortcut icon" href="images/favicon.png">
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-pink.min.css">
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    </style>
+    
+     <link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/styles.css" rel="stylesheet">
+    <script src="/webjars/jquery/jquery.min.js"></script>
+    <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+    <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+    <script src="/doBlog.js"></script>
+  </head>
+    
+    <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+    <a href="" onClick="disconnect()" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast" >
+    Disconnect
+    </a>
+    <div class="mdl-layout__container has-scrolling-header"><div class="mdl-layout mdl-js-layout mdl-layout--fixed-header has-tabs is-upgraded" data-upgraded=",MaterialLayout">
+      <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--teal-700 ">
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+        </div>
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+          <!--  header -->
+          <h3>internate.org Blog</h3>
+        </div>
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+        <p id="datastatus"></p>
+        </div>
+      </header>
+        
+      <main class="mdl-layout__content" >
+        <div class="mdl-layout__tab-panel is-active" id="overview">
+          
+           <!-- <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+              <i class="material-icons">play_circle_filled</i>
+            </header>
+            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+              <div class="mdl-card__supporting-text">
+                <h4>Features</h4>
+                Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor eu fugiat consectetur elit cillum esse.
+              </div>
+              <div class="mdl-card__actions">
+                <a href="#" class="mdl-button">Read our features</a>
+              </div>
+            </div>
+          </section>
+           
+            
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4 id="headerBlog_1">Technology</h4>
+                <p id="textBlog_1">Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor eu fugiat consectetur elit cillum esse. Pariatur occaecat nisi laboris tempor laboris eiusmod qui id Lorem esse commodo in. Exercitation aute dolore deserunt culpa consequat elit labore incididunt elit anim.</p>
+              </div>
+              <div class="mdl-card__actions">
+                <a id="linkBlog_1" href="#" class="mdl-button">Read our features</a>
+              </div>
+            </div>
+          </section>
+           -->
+        </div>
+         
+        <footer class="mdl-mega-footer" style="width: 100%;bottom: 0px;">
+         <div class="mdl-mega-footer--middle-section">
+             
+           
+          </div>
+          <div class="mdl-mega-footer--bottom-section">
+            <div class="mdl-logo">
+              More Information
+            </div>
+            <ul class="mdl-mega-footer--link-list">
+              <li><a href="https://developers.google.com/web/starter-kit/">Web Starter Kit</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Privacy and Terms</a></li>
+            </ul>
+          </div>
+        </footer>
+      </main>
+    </div></div>
+ 
+  
+
+</body>
+</html>
